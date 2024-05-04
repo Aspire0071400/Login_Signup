@@ -43,10 +43,10 @@
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_pass" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/edt_pass"
                 android:layout_width="280dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="32dp"
@@ -58,12 +58,12 @@
                 android:inputType="text"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText"
-                app:layout_constraintStart_toStartOf="@+id/editTextText"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                app:layout_constraintEnd_toEndOf="@+id/edt_email"
+                app:layout_constraintStart_toStartOf="@+id/edt_email"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/edt_email"
                 android:layout_width="280dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="24dp"
@@ -71,7 +71,7 @@
                 android:elevation="20dp"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Username"
+                android:hint="Email"
                 android:inputType="text"
                 android:textColor="@color/black"
                 android:textSize="20sp"

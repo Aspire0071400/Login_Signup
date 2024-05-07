@@ -30,9 +30,11 @@ public class MainPage extends AppCompatActivity {
 
         String username = sharedPreferences.getString("name", "");
         String email = sharedPreferences.getString("email", "");
+        String gender = sharedPreferences.getString("gender", "");
 
         binding.username.setText(username);
         binding.email.setText(email);
+        binding.gender.setText(gender);
 
     }
 }

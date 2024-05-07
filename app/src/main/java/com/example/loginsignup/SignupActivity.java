@@ -59,7 +59,6 @@ public class SignupActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, gender_list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         binding.genderSpinner.setAdapter(adapter);
-        //int currentGender = binding.genderSpinner.getSelectedItemPosition();
 
         binding.existingUserToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,9 +72,10 @@ public class SignupActivity extends AppCompatActivity {
         binding.signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int currentGender = binding.genderSpinner.getSelectedItemPosition();
                 name = binding.edtUsername.getText().toString().trim();
                 email = binding.edtEmail.getText().toString().trim();
-                //gender = gender_list.get(currentGender);
+                gender = gender_list.get(currentGender);
                 password = binding.edtPass.getText().toString().trim();
                 rePassword = binding.edtRePass.getText().toString().trim();
 
@@ -84,7 +84,7 @@ public class SignupActivity extends AppCompatActivity {
 
                             editor.putString("name", name);
                             editor.putString("email", email);
-                            //editor.putString("gender", gender);
+                            editor.putString("gender", gender);
                             editor.putString("pass", password);
                             editor.commit();
 
